@@ -41,7 +41,7 @@
   color: #888;
 }
 
-.image-container {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,6 +49,8 @@
   width: 100vw;
   height: 120vh;
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -69,10 +71,51 @@
   display: flex;
 }
 
-.container-background-image {
+.content {
   display: flex;
-  flex-direction: row;
-  background-size: cover;
-  justify-content: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 55%;
+  padding: 20px;
+}
+
+p {
+  font-weight: bold;
+  text-align: left;
+  font-size: 23px;
+}
+
+h1 {
+  text-align: left;
+}
+
+.button-one {
+  display: flex;
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  padding: 15px;
+  margin: 20px;
+  font-size: 20px;
+  width: 24%;
+}
+
+.button-two {
+  display: flex;
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  padding: 15px;
+  margin: 20px 20px 250px;
+  font-size: 20px;
+  width: 36%;
+}
+
+.people-image {
   height: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  z-index: 0; /* Ensure the background image is behind other content */
 }
